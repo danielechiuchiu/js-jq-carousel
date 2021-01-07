@@ -17,6 +17,14 @@ $(document).ready(function () {
    }
  );
 
+ $('.nav i').click(
+  function(){
+  var posizione = $(this).index();
+  console.log(posizione);
+  $('img').removeClass('active');
+  $('img').eq(posizione).addClass('active');
+  }
+);
 
 /*
 Step #1: Al click della freccia dx, lo slide fa scorrere le immagini rimuovendo la classe .active dall'immagine corrente e aggiungendola a quella succesiva
